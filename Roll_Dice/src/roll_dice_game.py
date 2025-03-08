@@ -9,10 +9,10 @@ def roll_dice():
     while True:
 
         # Take use input
-        user_input = input("Roll the Dice? y/n ")
+        user_input = input("Roll the Dice? y/n ").lower()
 
         # check if the user input is Yes or not or invalid choice
-        if user_input.lower() == 'y':
+        if user_input == 'y':
             die1 = random.randint(1,6)
             die2 = random.randint(1,6)
             print(f'({die1},{die2})')
